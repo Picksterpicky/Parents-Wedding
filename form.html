@@ -1,0 +1,54 @@
+(!DOCTYPE html)
+<html>
+    <head>
+        <title>Guest Form</title>
+    </head>
+    <body>
+        <section id="name">
+            <form>
+                <label for="name">What is your name?</label>
+                <input type="text" name="name" id="name" pattern="[A-Za-z]" required>
+            </form>
+        </section>
+        <section id="food">
+            <form>
+                <label for="food">How was the food?</label>
+                <br>
+                <span>Terrible</span>
+                <input type="range" id="food" name="foodRating" min="0" max="5" step="1" required>
+                <span>Amazing</span>
+            </form>
+        </section>
+        <section id="overall">
+            <form>
+                <label for="rating">How was the wedding overall?</label>
+                <br>
+                <span>Terrible</span>
+                <input type="range" id="rating" name="foodRating" min="0" max="5" step="1" requ>
+                <span>Amazing</span>
+            </form>
+        </section>
+        <section id="problems">
+            <form>
+                <label for="problems">Did you have any problems?</label>
+                <br>
+                <textarea id="problems" name="problemDescription" cols="50" rows="10">Problem:</textarea>
+            </form>
+        </section>
+        <section id="again">
+            <form>
+                <label for="again">Would you come again if you could?</label>
+                <br>
+                <input type="radio" name="again" id="yes" value="yes" required>
+                <label for="yes">Yes</label>
+                <input type="radio" name="again" id="no" value="no" required>
+                <label for="no">No</label>
+            </form>
+        </section>
+        <section id="submission">
+            <form>
+                <input type="submit" id="submit" name="submit">
+            </form>
+        </section>
+    </body>
+</html>
